@@ -16,7 +16,6 @@ on:
 jobs:
   lint:
     name: Lint
-    if: github.repository_owner == 'npm'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -54,7 +53,7 @@ jobs:
             os: ubuntu-latest
             shell: bash
           - name: macOS
-            os: macos-latest
+            os: macos-13
             shell: bash
           - name: Windows
             os: windows-latest
